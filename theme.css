@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
-
-body {
-	--font-text-theme: Cascadia, Sans;
+:root body {
+	--border-width: 2px;
 	--radius-s: 0px;
 	--radius-m: 0px;
 	--radius-l: 0px;
@@ -16,6 +14,9 @@ body {
 	--accent-h: 40;
 	--accent-s: 48%;
 	--accent-l: 46%;
+	--radius-s: 5px;
+  --radius-m: 0px;
+  --radius-l: 0px;
 }
 
 .workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
