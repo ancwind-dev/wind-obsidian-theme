@@ -16,18 +16,26 @@ https://github.com/ancwind-dev/wind-obsidian-theme
 	--radius-l: 0px;
 	--input-radius: 0px;
 	--tab-radius-active: 0px;
-	--checkbox-radius: 10px;
-	--checkbox-color:	#e2b664;
-	--checkbox-color-hover: #e2b664;
+	--checkbox-radius: 2px;
+	--checkbox-color:	#7F948A;
+	--checkbox-color-hover: #7F948A;
 	--toggle-radius: 15px;
 	--toggle-thumb-radius: 10px;
 	--slider-thumb-radius: 10px;
-	--accent-h: 40;
-	--accent-s: 48%;
-	--accent-l: 46%;
+
+	/* Accent & Main color*/	
+	--accent-h: 151;
+	--accent-s: 9%;
+	--accent-l: 54%;
+
+	/* Radiuses define the rounded corners for UI elements. */
 	--radius-s: 5px;
-  --radius-m: 0px;
-  --radius-l: 0px;
+  --radius-m: 8px;
+  --radius-l: 12px;
+	--radius-xl: 16px;
+
+	/* Button's radius in UI */
+	--button-radius: 5px;
 }
 
 .workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
@@ -53,6 +61,8 @@ svg * {
 	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
 }
 
+
+/* for css-snippet (future)
 .grid-bg {
   background-size: 20px 20px;
   background-position: center center;
@@ -72,3 +82,4 @@ svg * {
   background-size: 40px 40px;
   background-position: center center;
 }
+*/
