@@ -38,6 +38,80 @@ https://github.com/ancwind-dev/wind-obsidian-theme
 	--button-radius: 5px;
 }
 
+/* # custom checkbox statuses # */
+
+
+
+/* ## sets individual status icons and colors ## */
+
+
+/* false */
+[data-task="f"] {
+  --my-checkbox-color: var(--color-blue);
+  /* veggie's x */
+  --my-checkbox-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%203.704%203.704%22%3E%3Cpath%20d%3D%22M-1.855%203.619h2.91v.782h-2.91z%22%20style%3D%22fill%3A%23000%3Bfill-opacity%3A1%3Bstroke%3Anone%3Bstroke-width%3A.176004%22%20transform%3D%22rotate(-45%20-1.88%20.213)%22%2F%3E%3Cpath%20d%3D%22M-5.466-.791h2.91v.782h-2.91z%22%20style%3D%22fill%3A%23000%3Bfill-opacity%3A1%3Bstroke%3Anone%3Bstroke-width%3A.176004%22%20transform%3D%22rotate(225%20-.613%20-.488)%22%2F%3E%3C%2Fsvg%3E");
+}
+
+
+/* item */
+[data-task="t"] {
+  --my-checkbox-color: var(--color-blue);
+  /* Lucide squirrel */
+  --my-checkbox-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNxdWlycmVsIj48cGF0aCBkPSJNMTUuMjM2IDIyYTMgMyAwIDAgMC0yLjItNSIvPjxwYXRoIGQ9Ik0xNiAyMGEzIDMgMCAwIDEgMy0zaDFhMiAyIDAgMCAwIDItMnYtMmE0IDQgMCAwIDAtNC00VjQiLz48cGF0aCBkPSJNMTggMTNoLjAxIi8+PHBhdGggZD0iTTE4IDZhNCA0IDAgMCAwLTQgNCA3IDcgMCAwIDAtNyA3YzAtNSA0LTUgNC0xMC41YTQuNSA0LjUgMCAxIDAtOSAwIDIuNSAyLjUgMCAwIDAgNSAwQzcgMTAgMyAxMSAzIDE3YzAgMi44IDIuMiA1IDUgNWgxMCIvPjwvc3ZnPg==");
+}
+
+
+/* info */
+[data-task="i"] {
+  --my-checkbox-color: var(--color-blue);
+  --my-checkbox-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Outline' viewBox='0 0 24 24' width='512' height='512'%3E%3Cpath d='M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0Zm0,22A10,10,0,1,1,22,12,10.011,10.011,0,0,1,12,22Z'/%3E%3Cpath d='M12,10H11a1,1,0,0,0,0,2h1v6a1,1,0,0,0,2,0V12A2,2,0,0,0,12,10Z'/%3E%3Ccircle cx='12' cy='6.5' r='1.5'/%3E%3C/svg%3E%0A");
+
+
+}
+
+
+
+/* ## sets common properties ## */
+
+
+:is(
+  [data-task="f"],
+  [data-task="t"],
+  [data-task="i"]
+):is(.HyperMD-task-line, .task-list-item) input {
+  background: none;
+  border: none;
+ 
+  &::after {
+    background-color: var(--my-checkbox-color);
+    mask-image: var(--my-checkbox-icon);
+    mask-size: 100% 100%;
+  }
+}
+
+
+
+/* ## sets optional properties ## */
+
+
+/* disables mouse click */
+/* Reading */
+.task-list-item:is(
+  [data-task="f"],
+  [data-task="t"],
+  [data-task="i"]
+) > input,
+/* Live Preview */
+.task-list-label:has(> input:is(
+  [data-task="f"],
+  [data-task="t"],
+  [data-task="i"]
+)) {
+  pointer-events: none;
+}
+
+
+
 .workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
 	display: none;
 }
@@ -62,7 +136,7 @@ svg * {
 }
 
 
-/* for css-snippet (future)
+/* for css-snippet (future) */
 .grid-bg {
   background-size: 20px 20px;
   background-position: center center;
@@ -82,4 +156,3 @@ svg * {
   background-size: 40px 40px;
   background-position: center center;
 }
-*/
