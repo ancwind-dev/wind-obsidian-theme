@@ -16,7 +16,7 @@ https://github.com/ancwind-dev/wind-obsidian-theme
 	--radius-l: 0px;
 	--input-radius: 0px;
 	--tab-radius-active: 0px;
-	--checkbox-radius: 2px;
+	--checkbox-radius: 15px;
 	--checkbox-color:	#7F948A;
 	--checkbox-color-hover: #7F948A;
 	--toggle-radius: 15px;
@@ -38,35 +38,46 @@ https://github.com/ancwind-dev/wind-obsidian-theme
 	--button-radius: 5px;
 }
 
-/* # custom checkbox statuses # */
+/* Custom checkbox */
 
-
-
-/* ## sets individual status icons and colors ## */
-
-
-/* false */
-[data-task="f"] {
-  --my-checkbox-color: var(--color-blue);
-  /* veggie's x */
-  --my-checkbox-icon: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%203.704%203.704%22%3E%3Cpath%20d%3D%22M-1.855%203.619h2.91v.782h-2.91z%22%20style%3D%22fill%3A%23000%3Bfill-opacity%3A1%3Bstroke%3Anone%3Bstroke-width%3A.176004%22%20transform%3D%22rotate(-45%20-1.88%20.213)%22%2F%3E%3Cpath%20d%3D%22M-5.466-.791h2.91v.782h-2.91z%22%20style%3D%22fill%3A%23000%3Bfill-opacity%3A1%3Bstroke%3Anone%3Bstroke-width%3A.176004%22%20transform%3D%22rotate(225%20-.613%20-.488)%22%2F%3E%3C%2Fsvg%3E");
+/* alert */
+[data-task="!"] {
+  --my-checkbox-color: var(--color-orange);
+  --my-checkbox-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Layer_1' data-name='Layer 1' viewBox='0 0 24 24' width='512' height='512'%3E%3Cpath d='m22.536,8.46L15.537,1.459C14.592.515,13.337-.006,12.001-.006s-2.592.521-3.536,1.465L1.466,8.46c-1.949,1.949-1.949,5.12,0,7.069l6.999,7.001c.944.944,2.2,1.465,3.536,1.465s2.591-.521,3.536-1.465l6.999-7.001c.944-.944,1.464-2.199,1.464-3.534s-.52-2.591-1.464-3.535Zm-11.536-1.46c0-.553.448-1,1-1s1,.447,1,1v5.5c0,.553-.448,1-1,1s-1-.447-1-1v-5.5Zm1,11c-.828,0-1.5-.672-1.5-1.5s.672-1.5,1.5-1.5,1.5.672,1.5,1.5-.672,1.5-1.5,1.5Z'/%3E%3C/svg%3E");
 }
 
 
-/* item */
-[data-task="t"] {
-  --my-checkbox-color: var(--color-blue);
-  /* Lucide squirrel */
-  --my-checkbox-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNxdWlycmVsIj48cGF0aCBkPSJNMTUuMjM2IDIyYTMgMyAwIDAgMC0yLjItNSIvPjxwYXRoIGQ9Ik0xNiAyMGEzIDMgMCAwIDEgMy0zaDFhMiAyIDAgMCAwIDItMnYtMmE0IDQgMCAwIDAtNC00VjQiLz48cGF0aCBkPSJNMTggMTNoLjAxIi8+PHBhdGggZD0iTTE4IDZhNCA0IDAgMCAwLTQgNCA3IDcgMCAwIDAtNyA3YzAtNSA0LTUgNC0xMC41YTQuNSA0LjUgMCAxIDAtOSAwIDIuNSAyLjUgMCAwIDAgNSAwQzcgMTAgMyAxMSAzIDE3YzAgMi44IDIuMiA1IDUgNWgxMCIvPjwvc3ZnPg==");
-}
-
-
-/* info */
+/* idea */
 [data-task="i"] {
-  --my-checkbox-color: var(--color-blue);
-  --my-checkbox-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Outline' viewBox='0 0 24 24' width='512' height='512'%3E%3Cpath d='M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0Zm0,22A10,10,0,1,1,22,12,10.011,10.011,0,0,1,12,22Z'/%3E%3Cpath d='M12,10H11a1,1,0,0,0,0,2h1v6a1,1,0,0,0,2,0V12A2,2,0,0,0,12,10Z'/%3E%3Ccircle cx='12' cy='6.5' r='1.5'/%3E%3C/svg%3E%0A");
+  --my-checkbox-color: var(--color-yellow);
+  --my-checkbox-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Layer_1' data-name='Layer 1' viewBox='0 0 24 24'%3E%3Cpath d='m16.785,2.474l1.235-2.01c.288-.472.904-.618,1.375-.328.471.289.618.904.328,1.375l-1.235,2.01c-.188.308-.517.477-.853.477-.179,0-.359-.048-.522-.148-.471-.289-.618-.904-.328-1.375Zm-11.358,1.046c.188.308.518.478.854.478.178,0,.358-.048.521-.147.471-.289.619-.904.33-1.375L5.899.465c-.289-.471-.905-.618-1.375-.33-.471.289-.619.904-.33,1.375l1.232,2.01Zm-2.186,2.208l-1.798-.861c-.496-.241-1.097-.029-1.333.47-.239.498-.028,1.095.47,1.333l1.798.861c.139.067.286.099.431.099.373,0,.731-.209.902-.568.239-.498.028-1.095-.47-1.333Zm8.623-1.727c-5.514.091-9.884,6.067-6.89,11.823.455.874,1.13,1.606,1.855,2.273.275.253.488.566.67.902h3.501v-5.184c-1.161-.414-2-1.514-2-2.816,0-.553.447-1,1-1s1,.447,1,1,.448,1,1,1,1-.448,1-1,.447-1,1-1,1,.447,1,1c0,1.302-.839,2.402-2,2.816v5.184h3.468c.228-.391.522-.76.907-1.081.659-.55,1.279-1.163,1.66-1.932,1.737-3.513,1.048-7.259-1.426-9.691-1.541-1.516-3.582-2.328-5.745-2.295Zm-3.872,17.277c-.08,1.466,1.018,2.722,2.486,2.722h3.021c1.381,0,2.5-1.119,2.5-2.5v-.5H7.981c0,.094.017.182.011.278Zm15.921-15.978c-.228-.503-.819-.73-1.322-.5l-1.932.872c-.504.227-.728.819-.5,1.322.167.37.53.589.912.589.137,0,.277-.028.41-.089l1.932-.872c.504-.227.728-.819.5-1.322Z'/%3E%3C/svg%3E");
+}
 
 
+/* event */
+[data-task="e"] {
+  --my-checkbox-color: var(--color-red);
+  --my-checkbox-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='512' height='512'%3E%3Cg id='Capa_13' data-name='Capa 13'%3E%3Cpath d='M19.948,23H4.052A4.03,4.03,0,0,1,.6,21.088a3.947,3.947,0,0,1-.182-3.86L8.38,3.212a4.068,4.068,0,0,1,7.253.026l7.922,13.941a3.967,3.967,0,0,1-.156,3.909A4.03,4.03,0,0,1,19.948,23Z'/%3E%3C/g%3E%3C/svg%3E%0A");
+
+
+}
+
+/* in progress */
+[data-task="/"] {
+  --my-checkbox-color: #7F948A;
+  --my-checkbox-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Layer_1' data-name='Layer 1' viewBox='0 0 24 24' width='512' height='512'%3E%3Cpath d='M12,0C5.38,0,0,5.38,0,12s5.38,12,12,12,12-5.38,12-12S18.62,0,12,0Zm0,22V2c5.51,0,10,4.49,10,10s-4.49,10-10,10Z'/%3E%3C/svg%3E");
+}
+
+/* canceled */
+[data-task="c"] {
+  --my-checkbox-color: #7F948A;
+  --my-checkbox-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Layer_1' data-name='Layer 1' viewBox='0 0 24 24' width='512' height='512'%3E%3Cpath d='m12,0C5.383,0,0,5.383,0,12s5.383,12,12,12,12-5.383,12-12S18.617,0,12,0Zm4.707,15.293l-1.414,1.414-3.293-3.293-3.293,3.293-1.414-1.414,3.293-3.293-3.293-3.293,1.414-1.414,3.293,3.293,3.293-3.293,1.414,1.414-3.293,3.293,3.293,3.293Z'/%3E%3C/svg%3E%0A");
+}
+
+/* moved */
+[data-task="m"] {
+  --my-checkbox-color: #7F948A;
+  --my-checkbox-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Layer_1' data-name='Layer 1' viewBox='0 0 24 24' width='512' height='512'%3E%3Cpath d='M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12,12-5.383,12-12S18.617,0,12,0Zm5.629,12.896l-4.629,4.236v-4.132H6v-2h7V7l4.629,4.236c.494,.443,.494,1.217,0,1.66Z'/%3E%3C/svg%3E");
 }
 
 
@@ -75,9 +86,12 @@ https://github.com/ancwind-dev/wind-obsidian-theme
 
 
 :is(
-  [data-task="f"],
-  [data-task="t"],
-  [data-task="i"]
+  [data-task="!"],
+  [data-task="i"],
+  [data-task="e"],
+  [data-task="/"],
+  [data-task="c"],
+  [data-task="m"]
 ):is(.HyperMD-task-line, .task-list-item) input {
   background: none;
   border: none;
@@ -97,15 +111,21 @@ https://github.com/ancwind-dev/wind-obsidian-theme
 /* disables mouse click */
 /* Reading */
 .task-list-item:is(
-  [data-task="f"],
-  [data-task="t"],
-  [data-task="i"]
+  [data-task="!"],
+  [data-task="i"],
+  [data-task="e"],
+  [data-task="/"],
+  [data-task="c"],
+  [data-task="m"]
 ) > input,
 /* Live Preview */
 .task-list-label:has(> input:is(
-  [data-task="f"],
-  [data-task="t"],
-  [data-task="i"]
+  [data-task="!"],
+  [data-task="i"],
+  [data-task="e"],
+  [data-task="/"],
+  [data-task="c"],
+  [data-task="m"]
 )) {
   pointer-events: none;
 }
